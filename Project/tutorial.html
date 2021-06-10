@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>Flight Academy</title>
+        <style>
+            .mybutton {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(71, 125, 224);
+                border-radius: 8px;
+                height: 50px;
+                width: 200px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 30px;
+                color: rgb(190, 190, 190);
+                box-shadow: 2px 2px 2px black;
+                text-shadow: 0px 0px 6px black;
+            }
+            .mybutton:hover {
+                cursor: pointer;
+                background-color: rgb(52, 88, 156);
+                box-shadow: 0px 0px 0px black;
+            }
+            .text {
+                font-size: 30px;
+                font-weight: 600;
+				font-family:'Courier New', Courier, monospace;
+				color: rgba(255, 255, 255, 0.678);
+				text-shadow: 0px 0px 8px black;
+            }
+            .title{
+                font-size: 40px;
+                font-weight: 500;
+                color: rgb(75, 206, 230);
+            }
+            .title-commands{
+                font-weight: 500;
+                color:rgb(110, 218, 195);
+            }
+            .grid-container {
+				display: grid;
+				grid-template-columns: auto auto;
+				
+				padding: 10px;
+			}
+			.grid-item {
+                display: flex;
+				padding: 20px;
+				font-size: 30px;
+				text-align: center;
+                align-items: center;
+                justify-content: center;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				color: rgba(255, 255, 255, 0.678);
+				text-shadow: 0px 0px 8px black;
+                font-size: 30px;
+                font-weight: 500;
+				font-family:'Courier New', Courier, monospace;
+			}
+        </style>
+    </head>
+    <body style="background-color: rgb(46, 53, 61); font-family: Verdana, Geneva, Tahoma, sans-serif;">
+        <center>
+            <div>
+                <img src="../Common/Tutorial.svg" height="150px">
+            </div>
+        </center>
+
+            <div class="text">
+                <div>
+                    You are welcome to Flight Accademy!
+                </div>
+                <div>
+                    In order to pass the test you need to find the <span style="color: rgb(252, 80, 80);">RED</span> landing base and land on it.
+                </div>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <div class="text title">
+                    ENGINE START
+                </div>
+                <div class="text">
+                    To take off you must start engine. To do it press the <span style="color: rgb(69, 216, 93);">GREEN</span> 
+                    button on the left (Engine Start). Once the button has been pressed, wait for the starting
+                    procedure to be completed (green light on).
+                </div>
+                <div class="text">
+                    When the green light is on you are ready to take off.
+                </div>
+            </div>
+
+            <div class="text title" style="margin-top: 30px;">
+                <div>
+                    CONTROLS
+                </div>
+            
+            </div>
+
+            <div class="grid-container">
+				<div class="grid-item">
+                    <div class="text title-commands">FREE CAMERA COMMANDS</div>
+                </div>
+				<div class="grid-item">Left mouse button pressed and drag</div>
+				<div class="grid-item">
+                    <div class="text title-commands">
+                        FLIGHT COMMANDS
+                    </div>
+                </div>
+				<div class="grid-item">
+                    <div class="grid-container">
+                        <div class="grid-item">UP</div>
+                        <div class="grid-item" style="color: rgb(252, 80, 80);">W</div>
+                        <div class="grid-item">DOWN</div>
+                        <div class="grid-item" style="color: rgb(252, 80, 80);">S</div>
+
+                        <div class="grid-item">FORWARD</div>
+                        <div class="grid-item" style="color: rgb(252, 80, 80);">&#8593</div>
+                        <div class="grid-item">BACK</div>
+                        <div class="grid-item" style="color: rgb(252, 80, 80);">&#8595</div>
+                        <div class="grid-item">LEFT</div>
+                        <div class="grid-item" style="color: rgb(252, 80, 80);">&#8592</div>
+                        <div class="grid-item">RIGHT</div>
+                        <div class="grid-item" style="color: rgb(252, 80, 80);">&#8594</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-container" style="margin-top: 20px; grid-template-columns: 210px 210px;">
+                <div class="grid-item" style="padding-left: 0px;">
+                    <div class="mybutton" onclick='window.location.href= "Project.html"'>Start</div>
+                </div>  
+                <div class="grid-item" style="padding-left: 0px;">
+                    <div class="mybutton" onclick='window.location.href= "index.html"'>Home</div>
+                </div>
+            </div>
+            
+
+
+            
+
+        
+    </body>
+</html>

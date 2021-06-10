@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Flight Academy</title>
+		<style>
+			body { 
+				margin: 0;
+				overflow: hidden;
+			}
+			button {
+				background: transparent;
+				box-shadow: 0px 0px 0px transparent;
+				border: 0px solid transparent;
+				text-shadow: 0px 0px 0px transparent;
+			}
+
+				button:hover {
+				background: transparent;
+				box-shadow: 0px 0px 0px transparent;
+				border: 0px solid transparent;
+				text-shadow: 0px 0px 0px transparent;
+			}
+
+				button:active {
+				outline: none;
+				border: none;
+			}
+
+				button:focus {
+				outline: 0;
+			}
+			.myButton {
+				margin: 2px;
+				height: 40px;
+				font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+				font-size: medium;
+				border-radius: 10px;
+				background-color: rgb(96, 209, 96);
+
+				box-shadow: 0 9px #999;
+				cursor: pointer;
+			}
+			.myButton:hover {
+				/*background-color: rgb(60, 128, 60);*/
+				background-color: rgb(96, 209, 96);
+				box-shadow: 0 9px #999;
+			}
+			.myButton:active {
+				background-color: rgb(60, 128, 60);
+				box-shadow: 0 5px #666;
+  				transform: translateY(4px);
+			}
+			.light {
+				
+				background-color: rgb(207, 209, 96);
+
+				box-shadow: 0 9px #999;
+			}
+			.light:hover {
+				/*background-color: rgb(128, 127, 60);*/
+				background-color: rgb(207, 209, 96);
+				box-shadow: 0 9px #999;
+			}
+			.light:active {
+				background-color: rgb(128, 127, 60);
+				box-shadow: 0 5px #666;
+  				transform: translateY(4px);
+			}
+			.circle{
+				background-color: rgba(255, 255, 255, 0.2);;
+				height: 30px;
+				width: 30px;
+				border-radius: 15px;
+				margin-bottom: 10px;
+				display:inline-block;
+			}
+			.grid-container {
+				display: grid;
+				grid-template-columns: auto auto;
+				
+				padding: 10px;
+			}
+			.grid-item {
+				padding: 20px;
+				font-size: 30px;
+				text-align: center;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				color: rgba(255, 255, 255, 0.678);
+				text-shadow: 0px 0px 8px black;
+			}
+			.rtto{
+				font-size: medium;
+				color: rgb(0, 255, 0);
+			}
+		</style>
+	</head>
+	<body style="background-color: rgb(46, 53, 61);">
+        <center>
+			<div id="container" style="margin: 10px;">  
+			</div>
+
+			<div class="grid-container">
+				<div class="grid-item">ENGINE CONTROLS</div>
+				<div class="grid-item">LIGHT CONTROLS</div>
+				<div class="grid-item">
+					<div>
+						<button id="buttonStartEngine" class="myButton">Start Engine</button>
+					</div>
+				</div>
+				<div class="grid-item">
+					<button id="buttonLightOnOff" class="myButton light">Light</button>
+					<button id="buttonLightWhite" class="myButton light" style="background-color: whitesmoke;">White</button>
+					<button id="buttonLightRed" class="myButton light" style="background-color: rgb(255, 85, 85);">Red</button>
+					<button id="buttonLightBlue" class="myButton light" style="background-color: rgb(85, 85, 255);">Blue</button>
+				</div>
+				<div class="grid-item">
+					<div>
+						<div id="notReady" class="circle" style="background-color: red;"></div>
+						<div id="starting" class="circle"></div>
+						<div id="ready" class="circle"></div>
+					</div>
+					<div id="rtto" style="visibility: hidden;">
+						<span class="rtto">READY TO TAKE OFF</span>
+					</div>
+					
+				</div>  
+				<div class="grid-item">
+					<div style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium;">Light intensity</div>
+					<input id= "intensitySlider" type="range" min="0.5" max="5" step="0.1" value="1" class="slider">
+				</div>
+
+			</div>
+           
+			
+			
+        </center>
+
+		
+		<script src="../Common/three.js"></script>
+		<script src="../Common/Sky.js"></script>
+		<script src="../Common/OBJLoader.js"></script>
+		<script src="../Common/TDSLoader.js"></script>
+		<script src="../Common/DragControls.js"></script>
+		<script src="../Common/OrbitControls.js"></script>
+        <script src="../Common/tween.umd.js"></script>
+		
+        <script src="Project.js"></script>
+
+        
+	</body>
+</html>
