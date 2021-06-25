@@ -1,7 +1,7 @@
 # Flight Accademy
 The goal of this game is to pass a flight test. To pass it you have to fligt from the initial base to the red landing base.
 
-N.B. If you can't see the scene correctly or if you can't se the screen commands, please maximize the window or zoom out the web page.
+N.B. If you don't see the scene correctly or if you don't see the screen commands, please maximize the window or zoom out the web page.
 
 ## Commands
 To start the engine press the button "Start Engine" placed under the scene.
