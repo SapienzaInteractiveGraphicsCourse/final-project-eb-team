@@ -16,4 +16,4 @@ To start the engine press the button "Start Engine" placed under the scene.
 * arrow right -> turn right
 
 ## Game Link
-You can play at this [link](https://sapienzainteractivegraphicscourse.github.io/final-project-eb-team/)
+You can play at this [link](https://sapienzainteractivegraphicscourse.github.io/final-project-eb-team/) (Use Chrome)
