@@ -1,5 +1,5 @@
 # Flight Accademy
-The goal of this game is to pass a flight test. To pass it you have to fligt from the initial base to the landing base.
+The goal of this game is to pass a flight test. To pass it you have to fligt from the initial base to the red landing base.
 
 N.B. If you can't see the scene correctly or if you can't se the screen commands, please maximize the window or zoom out the web page.
 
