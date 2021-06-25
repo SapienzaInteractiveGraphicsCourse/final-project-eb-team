@@ -3,7 +3,7 @@ The goal of this game is to pass a flight test. To pass it you have to fligt fro
 
 N.B. 
 * If you don't see the scene correctly or if you don't see the screen commands, please maximize the window or zoom out the web page.
-* Pleast use Chrome for a better experience.
+* Please use Chrome for a better experience.
 
 ## Commands
 To start the engine press the button "Start Engine" placed under the scene.
