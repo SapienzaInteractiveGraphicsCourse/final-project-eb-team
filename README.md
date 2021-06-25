@@ -1,5 +1,17 @@
-# final-project-eb-team
-final-project-eb-team created by GitHub Classroom
+# Flight Accademy
+The goal of this game is to pass a flight test. To pass it you have to fligt from the initial base to the landing base.
 
-## Site
+N.B. If you can't see the scene correctly or if you can't se the screen commands, please maximize the window or zoom out the web page.
+
+## Commands
+To start the engine press the button "Start Engine" placed under the scene.
+
+W -> increase altitude
+S -> decrease altitude
+arrow up -> go ahead
+arrow down -> go back
+arrow left -> turn left
+arrow right -> turn right
+
+## Game Link
 You can play at this [link](https://sapienzainteractivegraphicscourse.github.io/final-project-eb-team/)
