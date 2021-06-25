@@ -6,7 +6,7 @@ N.B. If you don't see the scene correctly or if you don't see the screen command
 ## Commands
 To start the engine press the button "Start Engine" placed under the scene.
 
-W -> increase altitude
+W -> increase altitude \n
 S -> decrease altitude
 arrow up -> go ahead
 arrow down -> go back
