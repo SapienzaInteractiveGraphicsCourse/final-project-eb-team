@@ -616,7 +616,7 @@ controls.minDistance = 3;
 controls.enableDamping = true; 
 controls.dampingFactor = 0.05;
 
-//controls.update() must be called after any manual changes to the camera's transform
+
 camera.position.set(-30, 12, 0);
 controls.update()
 
@@ -630,7 +630,7 @@ function onDocumentKeyDown(e) {
         switch (e.code) {
             case 'ArrowUp':
                 var position = cockpit.localToWorld(new THREE.Vector3(1,0,0));
-                var pippo = new TWEEN.Tween(cockpit).to({position: position}, 10).start();
+                var auxAn = new TWEEN.Tween(cockpit).to({position: position}, 10).start();
                 position = cockpit.localToWorld(new THREE.Vector3(-30,12,0));
                 var cameraAnimation = new TWEEN.Tween(camera).to({position:position}, 10).start();
                 position = cockpit.localToWorld(new THREE.Vector3(6,-5,0));
@@ -639,7 +639,7 @@ function onDocumentKeyDown(e) {
             break;
             case 'ArrowDown':
                 var position = cockpit.localToWorld(new THREE.Vector3(-1,0,0));
-                var pippo = new TWEEN.Tween(cockpit).to({position: position}, 10).start();
+                var auxAn = new TWEEN.Tween(cockpit).to({position: position}, 10).start();
                 position = cockpit.localToWorld(new THREE.Vector3(-30,12,0));
                 var cameraAnimation = new TWEEN.Tween(camera).to({position:position}, 10).start();
                 position = cockpit.localToWorld(new THREE.Vector3(6,-5,0));
@@ -647,7 +647,7 @@ function onDocumentKeyDown(e) {
                 var shadowAnimation = new TWEEN.Tween(directionalLight.position).to({x: cockpit.position.x, z: cockpit.position.z-500}, 10).start();
             break;
             case 'ArrowLeft':
-                var pippo = new TWEEN.Tween(cockpit.rotation).to({y: cockpit.rotation.y+Math.PI/100}, 20).onComplete(function(){
+                var auxAn = new TWEEN.Tween(cockpit.rotation).to({y: cockpit.rotation.y+Math.PI/100}, 20).onComplete(function(){
                     var position = cockpit.localToWorld(new THREE.Vector3(-30,12,0));
                     new TWEEN.Tween(camera).to({position:position}, 100).start();
                 }).start();
@@ -655,7 +655,7 @@ function onDocumentKeyDown(e) {
                 var lightAnimation = new TWEEN.Tween(spotLight.target).to({position: position}, 10).start();                
             break;
             case 'ArrowRight':
-                var pippo = new TWEEN.Tween(cockpit.rotation).to({y: cockpit.rotation.y-Math.PI/100}, 20).onComplete(function(){
+                var auxAn = new TWEEN.Tween(cockpit.rotation).to({y: cockpit.rotation.y-Math.PI/100}, 20).onComplete(function(){
                     var position = cockpit.localToWorld(new THREE.Vector3(-30,12,0));
                     new TWEEN.Tween(camera).to({position:position}, 100).start();
                 }).start();
@@ -663,19 +663,19 @@ function onDocumentKeyDown(e) {
                 var lightAnimation = new TWEEN.Tween(spotLight.target).to({position: position}, 10).start();
             break;
             /*case 'KeyA':
-                var pippo = new TWEEN.Tween(cockpit.position).to({z: cockpit.position.z-1}, 10).start();
+                var auxAn = new TWEEN.Tween(cockpit.position).to({z: cockpit.position.z-1}, 10).start();
                 var cameraAnimation = new TWEEN.Tween(camera.position).to({z: camera.position.z-1}, 10).start();
                 var lightAnimation = new TWEEN.Tween(spotLight.target.position).to({z: spotLight.target.position.z-1}, 10).start();
                 var shadowAnimation = new TWEEN.Tween(directionalLight.position).to({z: directionalLight.position.z-1}, 10).start();
             break;
             case 'KeyD':
-                var pippo = new TWEEN.Tween(cockpit.position).to({z: cockpit.position.z+1}, 10).start();
+                var auxAn = new TWEEN.Tween(cockpit.position).to({z: cockpit.position.z+1}, 10).start();
                 var cameraAnimation = new TWEEN.Tween(camera.position).to({z: camera.position.z+1}, 10).start();
                 var lightAnimation = new TWEEN.Tween(spotLight.target.position).to({z: spotLight.target.position.z+1}, 10).start();
                 var shadowAnimation = new TWEEN.Tween(directionalLight.position).to({z: directionalLight.position.z+1}, 10).start();
             break;*/
             case 'KeyW':
-                var pippo = new TWEEN.Tween(cockpit.position).to({y: cockpit.position.y+0.5}, 50).start();
+                var auxAn = new TWEEN.Tween(cockpit.position).to({y: cockpit.position.y+0.5}, 50).start();
                 var cameraAnimation = new TWEEN.Tween(camera.position).to({y: camera.position.y+0.5}, 50).start();
                 var lightAnimation = new TWEEN.Tween(spotLight.target.position).to({y: spotLight.target.position.y+0.5}, 50).start();
             break;
@@ -684,7 +684,7 @@ function onDocumentKeyDown(e) {
                     && (!(cockpit.position.x > 488 && cockpit.position.x < 512 && cockpit.position.z < -188 && cockpit.position.z > -212 && cockpit.position.y<2.6))){
                     if(cockpit.position.y>0.6){
                         console.log(cockpit.position.x, cockpit.position.z)
-                        var pippo = new TWEEN.Tween(cockpit.position).to({y: cockpit.position.y-0.5}, 50).start();
+                        var auxAn = new TWEEN.Tween(cockpit.position).to({y: cockpit.position.y-0.5}, 50).start();
                         var cameraAnimation = new TWEEN.Tween(camera.position).to({y: camera.position.y-0.5}, 50).start();
                         var lightAnimation = new TWEEN.Tween(spotLight.target.position).to({y: spotLight.target.position.y-0.5}, 50).start();
                     }
